@@ -11,7 +11,7 @@ public class staticDropDown847 {
 		WebDriver driver = new ChromeDriver();
 		driver.navigate().to("https://rahulshettyacademy.com/seleniumPractise/#/");
 
-		System.out.println(driver.findElement(By.xpath("//*[@id=\"root\"]/div/div[1]/div/div[1]/div[2]/input")).getText());
+		System.out.println(driver.findElement(By.xpath("//*[@id=\"root\"]/div/div[1]/div/div[1]/div[2]/input")).getAttribute("value"));
 		
 		/*
 		int i = 1;
@@ -25,7 +25,7 @@ public class staticDropDown847 {
 		for(int i=1;i<5;i++) {
 			
 			driver.findElement(By.xpath("//*[@class='increment']")).click();
-			System.out.println(driver.findElement(By.xpath("//*[@id=\"root\"]/div/div[1]/div/div[1]/div[2]/input")).getText());
+			System.out.println(driver.findElement(By.xpath("//*[@id=\"root\"]/div/div[1]/div/div[1]/div[2]/input")).getAttribute("value"));
 		}
 
 	}
